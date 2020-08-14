@@ -13,8 +13,8 @@ const ColorBox = (props) => {
   });
   // For Overlay
   const changeCopyState = () => {
-    setState({ ...state, copied: true });
-    setTimeout(() => setState({ ...state, copied: false }), 2000);
+    setState({ copied: true });
+    setTimeout(() => setState({ copied: false }), 2000);
   };
 
   const { background, name } = props;
